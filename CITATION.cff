@@ -7,7 +7,7 @@ authors:
 version: 0.1.0
 date-released: 2026-04-26
 license: MIT
-repository-code: "https://github.com/[anonymized]/qft-einstein-bridge-repro"
+repository-code: "https://github.com/TerraSignum/qft-einstein-bridge-repro"
 abstract: >-
   Bridge note: the electroweak (QFT) sector and the cosmological (Einstein) sector
   of the Emergence reproducibility-paper series share the same five measured

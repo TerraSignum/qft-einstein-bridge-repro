@@ -2,7 +2,7 @@
 
 **A common loop-topological carrier for electroweak and emergent-gravity sectors.**
 
-[![CI: reproduce](https://github.com/[anonymized]/qft-einstein-bridge-repro/actions/workflows/reproduce.yml/badge.svg)](https://github.com/[anonymized]/qft-einstein-bridge-repro/actions/workflows/reproduce.yml)
+[![CI: reproduce](https://github.com/TerraSignum/qft-einstein-bridge-repro/actions/workflows/reproduce.yml/badge.svg)](https://github.com/TerraSignum/qft-einstein-bridge-repro/actions/workflows/reproduce.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 This repository is a short companion (bridge note) to Papers 2-4 of the
@@ -42,7 +42,7 @@ law.
 ## Installation (Windows PowerShell)
 
 ```powershell
-git clone https://github.com/[anonymized]/qft-einstein-bridge-repro.git
+git clone https://github.com/TerraSignum/qft-einstein-bridge-repro.git
 cd qft-einstein-bridge-repro
 
 py -3.11 -m venv .venv

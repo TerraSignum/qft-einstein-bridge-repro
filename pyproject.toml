@@ -19,9 +19,9 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/[anonymized]/qft-einstein-bridge-repro"
-Homepage = "https://github.com/[anonymized]/qft-einstein-bridge-repro"
-Issues = "https://github.com/[anonymized]/qft-einstein-bridge-repro/issues"
+Repository = "https://github.com/TerraSignum/qft-einstein-bridge-repro"
+Homepage = "https://github.com/TerraSignum/qft-einstein-bridge-repro"
+Issues = "https://github.com/TerraSignum/qft-einstein-bridge-repro/issues"
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0",
