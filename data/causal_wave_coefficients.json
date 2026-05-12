@@ -1,0 +1,19 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "running",
+    "branch_rationale": "Causal-wave / chirality-running carrier; spans the chirality flip",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Local copy of the five measured causal-wave coefficients, identical to emergence-core-data v0.1.0. Both the QFT sector and the Einstein sector source their coefficients from this file.",
+  "coefficients": {
+    "alpha_xi": 0.90082,
+    "D_Omega": 0.83996,
+    "beta_pi": 0.93791,
+    "gamma": 0.10021,
+    "eps_sync2": 0.05
+  },
+  "G_NET": 1.78852,
+  "N_gen": 3
+}

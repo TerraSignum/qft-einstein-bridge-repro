@@ -1,0 +1,220 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "QFT-Einstein bridge note repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.1.0",
+  "release": "v0.1.0",
+  "description": "Einstein/cosmological sector mapping. The dominant single-loop entry at n=4 is the Resummed-Propagator (T_RH). Most cosmological observables are tree-level compositions of the five causal-wave coefficients with loop classes from the same library that the QFT/electroweak sector uses; their (n,g,s) cells are read off from the canonical assignments in the cross-sector consistency table (e.g. Omega_DM h^2 is Sub-Generation Lemma 6 at n=1, not Cosmological-Density Lemma 8 \u00e2\u20ac\u201d see the loop-class library closure paper and the emergent-GR closure paper for the cross-sector mappings).",
+  "spinor_trace_classes": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "observables": [
+    {
+      "id": "GR01",
+      "name": "Omega_DM_h2",
+      "lemma": 6,
+      "n": 1,
+      "g": "1/(2*N_gen)",
+      "loop_class": "1-gamma/(2*N_gen)",
+      "tier": "EXACT",
+      "sector_label": "Sub-Generation"
+    },
+    {
+      "id": "GR02",
+      "name": "T_RH",
+      "lemma": 4,
+      "n": 4,
+      "g": 0,
+      "loop_class": "1/(1-2*gamma^2)",
+      "tier": "STRUCTURAL_PRECISE",
+      "sector_label": "Resummed-Propagator"
+    },
+    {
+      "id": "GR03",
+      "name": "Einstein_gap_two_thirds",
+      "lemma": null,
+      "n": 1,
+      "g": 0,
+      "loop_class": "1 (tree)",
+      "tier": "EXACT",
+      "sector_label": "Continuum-limit (tree)"
+    },
+    {
+      "id": "GR04",
+      "name": "BH_entropy_quarter",
+      "lemma": null,
+      "n": 1,
+      "g": 0,
+      "loop_class": "1 (tree)",
+      "tier": "EXACT",
+      "sector_label": "Horizon (tree)"
+    },
+    {
+      "id": "GR05",
+      "name": "sigma_8",
+      "lemma": "1+5",
+      "n": 2,
+      "g": "1/N_gen",
+      "loop_class": "(1-gamma/4)*(1-gamma/N_gen)",
+      "tier": "EXACT",
+      "sector_label": "Yukawa x Generation (2-loop)"
+    },
+    {
+      "id": "GR06",
+      "name": "eta_B",
+      "lemma": "1+5",
+      "n": 2,
+      "g": "1/N_gen",
+      "loop_class": "(1-gamma/4)*(1-gamma/N_gen)",
+      "tier": "EXACT",
+      "sector_label": "Yukawa x Generation (2-loop)"
+    },
+    {
+      "id": "GR07",
+      "name": "omega_b_h2",
+      "lemma": "8+3",
+      "n": 4,
+      "g": 0,
+      "loop_class": "(1-gamma/2)*(1-gamma^2)",
+      "tier": "EXACT",
+      "tier_residual_pct": 0.241,
+      "sector_label": "Cosmological-Density x Pure-Self-Energy (2-loop)"
+    },
+    {
+      "id": "GR08",
+      "name": "Lambda_QCD",
+      "lemma": "pure-eps2+7",
+      "n": 0,
+      "g": 0,
+      "loop_class": "(1+eps_sync2)*(1+gamma*eps_sync2)",
+      "tier": "EXACT",
+      "sector_label": "Pure-Sync x EW-Mixed (2-loop)"
+    },
+    {
+      "id": "GR09",
+      "name": "w_DE",
+      "lemma": 2,
+      "n": 1,
+      "g": 0,
+      "loop_class": "-(1-gamma**2/4)",
+      "tier": "EXACT",
+      "sector_label": "PMNS-Self-Energy (cosmological dark-energy equation of state)"
+    },
+    {
+      "id": "GR10",
+      "name": "n_s",
+      "lemma": 7,
+      "n": 1,
+      "g": 0,
+      "loop_class": "1-gamma*(2*N_gen+1)*eps_sync2",
+      "tier": "EXACT",
+      "sector_label": "EW-Mixed (inflation scalar tilt; topology denominator 2N_gen+1=7)"
+    },
+    {
+      "id": "GR11",
+      "name": "tau_reion",
+      "lemma": null,
+      "n": 1,
+      "g": 0,
+      "loop_class": "1 (tree)",
+      "tier": "EXACT",
+      "tier_residual_pct": 0.0,
+      "sector_label": "Cosmology tree-level (reionisation optical depth)"
+    },
+    {
+      "id": "GR12",
+      "name": "delta_Y_BBN",
+      "lemma": null,
+      "n": 1,
+      "g": 0,
+      "loop_class": "1 (tree)",
+      "tier": "PRECISE",
+      "tier_residual_pct": 0.816,
+      "sector_label": "BBN tree-level (Helium fraction)"
+    },
+    {
+      "id": "GR13",
+      "name": "PMNS_theta_13",
+      "lemma": 2,
+      "n": 1,
+      "g": 0,
+      "loop_class": "1-gamma^2/4",
+      "tier": "EXACT",
+      "tier_residual_pct": 0.45,
+      "sector_label": "PMNS-Self-Energy (neutrino mixing)"
+    },
+    {
+      "id": "GR14",
+      "name": "H_0",
+      "lemma": 1,
+      "n": 1,
+      "g": 0,
+      "loop_class": "1+gamma/4",
+      "tier": "EXACT",
+      "tier_residual_pct": 0.193,
+      "sector_label": "Yukawa-Damping (cosmological Hubble constant)"
+    },
+    {
+      "id": "GR15",
+      "name": "N_eff",
+      "lemma": null,
+      "n": 1,
+      "g": 0,
+      "loop_class": "structural (3 active neutrino species + thermal)",
+      "tier": "EXACT",
+      "tier_residual_pct": 0.033,
+      "sector_label": "Neutrino effective species (Mangano et al. 2005 / Planck 2018 LCDM)"
+    },
+    {
+      "id": "GR16",
+      "name": "T_CMB",
+      "lemma": null,
+      "n": 1,
+      "g": 0,
+      "loop_class": "1 (tree, fixed by entropy conservation since recombination)",
+      "tier": "EXACT",
+      "tier_residual_pct": 0.0,
+      "sector_label": "CMB temperature (FIRAS COBE)"
+    },
+    {
+      "id": "GR17",
+      "name": "eta_B",
+      "lemma": "1+5",
+      "n": 2,
+      "g": "1/N_gen",
+      "loop_class": "(1-gamma/4)*(1-gamma/N_gen)",
+      "tier": "ORDER",
+      "tier_residual_pct": 46.6,
+      "sector_label": "Baryon asymmetry direct anchor (Phase II refinement, see GR06 cross-sector closure)"
+    },
+    {
+      "id": "GR18",
+      "name": "m_H",
+      "lemma": 1,
+      "n": 1,
+      "g": 0,
+      "loop_class": "1+gamma/4",
+      "tier": "EXACT",
+      "tier_residual_pct": 0.439,
+      "sector_label": "Higgs mass (Yukawa-Damping; PDG 2024 ATLAS+CMS combined)"
+    },
+    {
+      "id": "GR19",
+      "name": "Lambda_s_spatial_CC",
+      "lemma": "lambda-s-closure",
+      "n": 0,
+      "g": 0,
+      "s": "eps^2 * gamma",
+      "loop_class": "-gamma^2/2",
+      "tier": "EXACT",
+      "sector_label": "Cosmological-CC-spatial",
+      "note": "Per-axis Lambda_s = -gamma^2/2 = -1/200 closed via Lemma 10 Pure-Sync x Yukawa-Damping at chirality-half projection (cf. P3 O28 verify_lemma10_lambda_s_closure.py); the full Lambda_munu = diag(alpha_xi^2, -gamma^2/2, -gamma^2/2, +gamma^2/2) tensor with Trace 161/200 lives in P4-B."
+    }
+  ],
+  "note": "Spinor-trace classes for cosmological-sector observables span n in {0, 1, 2, 4}. The single-loop Resummed-Propagator class (T_RH at n=4) is the only entry whose unaugmented Dirac structure is purely Einstein-side. Most other cosmological observables are tree-level compositions or 2-loop compounds whose dominant n is set by the largest contributing lemma. Omega_DM h^2 in particular is a Sub-Generation closure at n=1 (Lemma 6, 1-gamma/(2*N_gen)), aligned with alpha_s and CKM V_us / V_cb on the QFT side \u00e2\u20ac\u201d i.e., the QFT/Einstein discrimination is by physical sector, not by a hard n-cut."
+}

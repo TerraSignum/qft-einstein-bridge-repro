@@ -1,0 +1,89 @@
+{
+  "criterion": "Cosmological-anchor table recompute",
+  "n_anchored": 16,
+  "n_structural": 2,
+  "EXACT_anchored": 12,
+  "PRECISE_anchored": 2,
+  "ORDER_anchored": 2,
+  "STRUCTURAL": 2,
+  "max_strict_tier_residual_pct": 1.385,
+  "max_strict_tier_observable": "Omega_DM_h2",
+  "all_anchored_within_disclosed_tier": true,
+  "yukawa_cluster_three_observables_within_0p3pct": true,
+  "yukawa_cluster_p_combined_from_paper3": 2.6e-05,
+  "formula_recompute_check": [
+    {
+      "id": "GR01",
+      "name": "Omega_DM_h2",
+      "formula": "1-gamma/(2*N_gen)",
+      "multiplier_eval": 0.9832983333333334,
+      "predicted_listed": 0.121663
+    },
+    {
+      "id": "GR03",
+      "name": "Einstein_gap_two_thirds",
+      "formula": "1 (tree)",
+      "eval_error": "name 'tree' is not defined"
+    },
+    {
+      "id": "GR04",
+      "name": "BH_entropy_quarter",
+      "formula": "1 (tree, with R-ascent to algebraic identity)",
+      "eval_error": "invalid syntax (<string>, line 1)"
+    },
+    {
+      "id": "GR05",
+      "name": "sigma_8",
+      "formula": "(1-gamma/4)*(1-gamma/N_gen)",
+      "multiplier_eval": 0.942381003675,
+      "predicted_listed": 0.811
+    },
+    {
+      "id": "GR07",
+      "name": "omega_b_h2",
+      "formula": "(1-gamma/2)*(1-gamma**2)",
+      "multiplier_eval": 0.9403561125196306,
+      "predicted_listed": 0.022414
+    },
+    {
+      "id": "GR09",
+      "name": "w_DE",
+      "formula": "-(1-gamma**2/4)",
+      "multiplier_eval": -0.997489488975,
+      "predicted_listed": -0.9975
+    },
+    {
+      "id": "GR10",
+      "name": "n_s",
+      "formula": "1-gamma*(2*N_gen+1)*eps_sync2",
+      "multiplier_eval": 0.9649265,
+      "predicted_listed": 0.96499
+    },
+    {
+      "id": "GR11",
+      "name": "tau_reion",
+      "formula": "1 (tree)",
+      "eval_error": "name 'tree' is not defined"
+    },
+    {
+      "id": "GR12",
+      "name": "delta_Y_BBN",
+      "formula": "1 (tree)",
+      "eval_error": "name 'tree' is not defined"
+    },
+    {
+      "id": "GR15",
+      "name": "N_eff",
+      "formula": "structural (3 active neutrino species + thermal)",
+      "eval_error": "invalid syntax. Perhaps you forgot a comma? (<string>, line 1)"
+    },
+    {
+      "id": "GR17",
+      "name": "eta_B",
+      "formula": "(1-gamma/4)*(1-gamma/N_gen)",
+      "multiplier_eval": 0.942381003675,
+      "predicted_listed": 3.26e-10
+    }
+  ],
+  "verdict": "PASS"
+}

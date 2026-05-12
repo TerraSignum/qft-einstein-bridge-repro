@@ -1,0 +1,47 @@
+================================================================================
+QFT-Einstein bridge consistency check
+================================================================================
+
+--- (1) Shared coefficients ---
+  alpha_xi: bridge=0.90082, local=0.90082  -- OK
+  D_Omega: bridge=0.83996, local=0.83996  -- OK
+  beta_pi: bridge=0.93791, local=0.93791  -- OK
+  gamma: bridge=0.10021, local=0.10021  -- OK
+  eps_sync2: bridge=0.05, local=0.05  -- OK
+  Verdict: PASS
+
+--- (2) QFT sector spinor-trace class ---
+  Declared:        n = 1
+  Bridge expects:  1
+  Verdict: PASS
+
+--- (3) Einstein sector spinor-trace classes ---
+  Declared dominant: n in [0, 1, 2, 4]
+  Bridge expects:    n in [0, 1, 2, 4]
+  Verdict: PASS
+
+--- (4) Shared loop library ---
+  Library lemmas: ['1', '2', '3', '4', '5', '6', '7', '8', 'pure-eps2']
+  QFT uses:       ['1', '1+2', '2', '6', '7']
+  Einstein uses:  ['1+5', '4', '6', '8+3', 'None', 'pure-eps2+7']
+  QFT-only:       ['1', '1+2', '2', '7']
+  Einstein-only:  ['1+5', '4', '8+3', 'None', 'pure-eps2+7']
+  Verdict: PASS (both sectors draw from the same library; specialization is by n, not by class)
+
+--- (5) Shared T-parity source axiom ---
+  Axiom:        T-parity source axiom on the defect field (Xi is T-odd)
+  Consequence:  theta_em = pi (defect field T-odd)
+  Common to:    ['QFT_sector', 'Einstein_sector']
+  Verdict: PASS
+
+--- (6) Shared falsification paths ---
+  trigger='T-parity-axiom-failure': alternative T-parity assignment of the defect field flips the sign of the two-loop closure (companion electroweak-scale paper, falsification path F2)
+  trigger='constraint-violation': system-R constraints C1, C2, C3 fail to follow Lemma-4 + Lemma-7 forms
+  trigger='mapping-inconsistency': the same (n, g, s) returns different lemma classes in QFT vs Einstein sectors
+  trigger='cross-sector-reclassification': an observable cannot be classified consistently in both QFT and Einstein sectors
+  Verdict: PASS (4 of >=4 required paths apply to both sectors)
+
+--- Aggregate ---
+  Bridge consistent: PASS
+
+Saved: C:\Users\user\Desktop\Emergence\qft-einstein-bridge-repro\outputs\bridge_consistency_report.json

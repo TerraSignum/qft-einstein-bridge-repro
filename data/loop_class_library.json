@@ -1,0 +1,27 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Galaxy/cluster lensing/dynamics; matter-sector observable",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Local copy of the loop-class library shared between QFT and Einstein sectors. Identical to loop-class-closure-repro v0.1.0.",
+  "lemma_set": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    "pure-eps2",
+    "lambda-s-closure"
+  ],
+  "lemma_descriptions": {
+    "lambda-s-closure": "Pure-Sync x Yukawa-Damping at chirality-half projection (Lambda_s closure: -gamma^2/2)"
+  },
+  "atomic_classes_with_signs": 19,
+  "compounds_allowed": "max two-loop"
+}

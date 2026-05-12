@@ -1,0 +1,31 @@
+cff-version: 1.2.0
+title: "A common loop-topological carrier for electroweak and emergent-gravity sectors"
+message: "If you use this software or data, please cite it using the metadata below."
+authors:
+  - family-names: Bucciarelli
+    given-names: Sandro
+version: 0.1.0
+date-released: 2026-04-26
+license: MIT
+repository-code: "https://github.com/[anonymized]/qft-einstein-bridge-repro"
+abstract: >-
+  Bridge note: the electroweak (QFT) sector and the cosmological (Einstein) sector
+  of the Emergence reproducibility-paper series share the same five measured
+  causal-wave coefficients, the same finite loop-class library (Lemmas 1-8 plus
+  pure-sync), and the same T-parity source axiom. The two sectors differ
+  only in the spinor-trace component count n: QFT lives at n=1, Einstein dominates
+  at n=2 and n=4. We document the bridge mapping, verify it by automated tests,
+  and list the falsification paths that apply to both sectors symmetrically.
+keywords:
+  - bridge note
+  - QFT-GR
+  - common carrier
+  - reproducibility
+references:
+  - type: article
+    title: "A common loop-topological carrier for electroweak and emergent-gravity sectors"
+    authors:
+      - family-names: Bucciarelli
+        given-names: Sandro
+    year: 2026
+    notes: "Accompanying preprint; see paper/bridge_note.pdf in this repository."

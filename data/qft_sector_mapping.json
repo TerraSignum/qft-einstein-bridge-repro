@@ -1,0 +1,97 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "QFT-Einstein bridge note repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "QFT/electroweak sector mapping. All entries belong to spinor-trace class n=1 (single Dirac-current Yukawa-vertex topology).",
+  "spinor_trace_class": 1,
+  "observables": [
+    {
+      "id": "EW01",
+      "name": "v_EW",
+      "lemma": 7,
+      "loop_class": "1+gamma*eps_sync2",
+      "tier": "EXACT"
+    },
+    {
+      "id": "EW02",
+      "name": "m_W",
+      "lemma": 7,
+      "loop_class": "1+gamma*eps_sync2",
+      "tier": "EXACT"
+    },
+    {
+      "id": "EW03",
+      "name": "m_Z",
+      "lemma": 7,
+      "loop_class": "1+gamma*eps_sync2",
+      "tier": "EXACT"
+    },
+    {
+      "id": "QF01",
+      "name": "m_H",
+      "lemma": 1,
+      "loop_class": "1+gamma/4",
+      "tier": "PRECISE"
+    },
+    {
+      "id": "QF02",
+      "name": "alpha_dn_yukawa",
+      "lemma": 1,
+      "loop_class": "1+gamma/4",
+      "tier": "EXACT"
+    },
+    {
+      "id": "QF03",
+      "name": "alpha_s_M_Z",
+      "lemma": 6,
+      "loop_class": "1-gamma/(2*N_gen)",
+      "tier": "EXACT"
+    },
+    {
+      "id": "EW04",
+      "name": "Gamma_W",
+      "lemma": 7,
+      "loop_class": "1+gamma*eps_sync2",
+      "tier": "PRECISE"
+    },
+    {
+      "id": "EW05",
+      "name": "Gamma_Z",
+      "lemma": 7,
+      "loop_class": "1+gamma*eps_sync2",
+      "tier": "PRECISE"
+    },
+    {
+      "id": "CK01",
+      "name": "CKM_V_us",
+      "lemma": 6,
+      "loop_class": "1-gamma/(2*N_gen)",
+      "tier": "EXACT"
+    },
+    {
+      "id": "CK02",
+      "name": "CKM_V_cb",
+      "lemma": 6,
+      "loop_class": "1+gamma/(2*N_gen)",
+      "tier": "PRECISE"
+    },
+    {
+      "id": "PM01",
+      "name": "PMNS_theta_13",
+      "lemma": 2,
+      "loop_class": "1-gamma^2/4",
+      "tier": "EXACT"
+    },
+    {
+      "id": "PM02",
+      "name": "PMNS_delta_CP",
+      "lemma": "1+2",
+      "loop_class": "(1+gamma/4)*(1-gamma^2/4)",
+      "tier": "EXACT"
+    }
+  ]
+}

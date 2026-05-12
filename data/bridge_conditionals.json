@@ -1,0 +1,154 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "QFT-Einstein bridge note repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Bridge note: the QFT/electroweak sector and the Einstein/GR sector use the same five causal-wave coefficients and the same finite loop-class library. They differ in the spinor-trace component count n: QFT/Yukawa lives at n=1; Einstein/cosmological observables span n in {0, 1, 2, 4} with the resummed propagator at n=4.",
+  "bridge_axes": {
+    "shared_coefficients": {
+      "alpha_xi": 0.90082,
+      "D_Omega": 0.83996,
+      "beta_pi": 0.93791,
+      "gamma": 0.10021,
+      "eps_sync2": 0.05,
+      "common_to": [
+        "QFT_sector",
+        "Einstein_sector"
+      ]
+    },
+    "shared_loop_library": {
+      "size_atomic_classes": 9,
+      "lemma_set": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        "pure-eps2"
+      ],
+      "common_to": [
+        "QFT_sector",
+        "Einstein_sector"
+      ]
+    },
+    "shared_T_parity_source": {
+      "axiom": "T-parity source axiom on the defect field (Xi is T-odd)",
+      "consequence": "theta_em = pi (defect field T-odd)",
+      "common_to": [
+        "QFT_sector",
+        "Einstein_sector"
+      ]
+    }
+  },
+  "QFT_sector_mapping": {
+    "spinor_trace_class": 1,
+    "examples": [
+      {
+        "observable": "v_EW",
+        "lemma": 7,
+        "sector_label": "EW-Mixed"
+      },
+      {
+        "observable": "m_W",
+        "lemma": 7,
+        "sector_label": "EW-Mixed"
+      },
+      {
+        "observable": "m_Z",
+        "lemma": 7,
+        "sector_label": "EW-Mixed"
+      },
+      {
+        "observable": "m_H",
+        "lemma": 1,
+        "sector_label": "Yukawa-Damping"
+      },
+      {
+        "observable": "alpha_dn_yukawa",
+        "lemma": 1,
+        "sector_label": "Yukawa-Damping"
+      }
+    ]
+  },
+  "Einstein_sector_mapping": {
+    "spinor_trace_classes": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "examples": [
+      {
+        "observable": "Omega_DM_h2",
+        "lemma": 6,
+        "sector_label": "Sub-Generation",
+        "n": 1,
+        "g": "1/(2*N_gen)"
+      },
+      {
+        "observable": "T_RH",
+        "lemma": 4,
+        "sector_label": "Resummed-Propagator",
+        "n": 4,
+        "g": 0
+      },
+      {
+        "observable": "sigma_8",
+        "lemma": "1+5",
+        "sector_label": "Yukawa x Generation (2-loop)",
+        "n": 2,
+        "g": "1/N_gen"
+      },
+      {
+        "observable": "Einstein_gap_two_thirds",
+        "lemma": null,
+        "sector_label": "Continuum-limit (tree)",
+        "n": 1,
+        "g": 0
+      }
+    ],
+    "note": "Cosmological observables span n in {0, 1, 2, 4}. The single-loop Resummed-Propagator (T_RH at n=4) is the only entry whose unaugmented Dirac structure is purely Einstein-side. Most other cosmological observables are tree-level or 2-loop compounds whose dominant n is set by the largest contributing lemma. Omega_DM h^2 is a Sub-Generation closure at n=1 (Lemma 6, 1-gamma/(2*N_gen)), aligned with alpha_s and CKM V_us / V_cb on the QFT side; see the companion loop-class closure paper for the full classification."
+  },
+  "shared_falsification_paths": [
+    {
+      "trigger": "T-parity-axiom-failure",
+      "test": "alternative T-parity assignment of the defect field flips the sign of the two-loop closure (companion electroweak-scale paper, falsification path F2)",
+      "applies_to": [
+        "QFT_sector",
+        "Einstein_sector"
+      ]
+    },
+    {
+      "trigger": "constraint-violation",
+      "test": "coefficient-reduction constraints C1, C2, C3 under the reduction system R fail to follow Lemma-4 + Lemma-7 forms",
+      "applies_to": [
+        "QFT_sector",
+        "Einstein_sector"
+      ]
+    },
+    {
+      "trigger": "mapping-inconsistency",
+      "test": "the same full topology tuple (n, g, s, w, r) returns different lemma classes in QFT vs Einstein sectors",
+      "applies_to": [
+        "QFT_sector",
+        "Einstein_sector"
+      ]
+    },
+    {
+      "trigger": "cross-sector-reclassification",
+      "test": "an observable cannot be classified consistently in both QFT and Einstein sectors",
+      "applies_to": [
+        "QFT_sector",
+        "Einstein_sector"
+      ]
+    }
+  ],
+  "structural_claim": "The two sectors are NOT independent theories that happen to use similar formulas; they are two regimes (different n) of the same five-coefficient causal-wave transport law with the same loop-class library and the same T-parity source axiom.",
+  "non_claim": "This bridge does not derive a quantum-gravity UV completion; it is a structural mapping between two emergent sectors."
+}

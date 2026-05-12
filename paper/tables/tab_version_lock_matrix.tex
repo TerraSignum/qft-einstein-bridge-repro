@@ -1,0 +1,17 @@
+\setlength{\tabcolsep}{3pt}\scriptsize
+\begin{tabular}{l p{0.26\textwidth} l p{0.18\textwidth} p{0.22\textwidth}}
+\toprule
+Paper & Repo & SHA-256 (12 hex) & Accepted claim level & Depends on \\
+\midrule
+P1 & \texttt{hbr-ew-scale} & \texttt{8872b085f7d1} & conditional EW closure & $S_{\rm bounce}$, T-parity, MS-bar \\
+P2 & \texttt{causal-wave-landings} & \texttt{b91aad0f41bd} & $\mathcal R$-coefficient backbone (hypothesis) & P3 library, P4 metric, T-parity \\
+P3 & \texttt{loop-class-closure} & \texttt{98ffbd422bc4} & loop-class library + topology-tuple protocol & $\mathcal R$ from P2 \\
+P4 & \texttt{egr-closure} & \texttt{8843d51299a2} & bulk-percentile Einstein-class closure & $\Lambda^{\rm back}$, P2 $\mathcal R$ \\
+P4-A & \texttt{egr-schwarzschild-ppn} & \texttt{cbc2b3771d3b} & linearised Schwarzschild + PPN & P4 closure \\
+P4-B & \texttt{egr-anisotropic-source-dm-de} & \texttt{e6a3914e8590} & source decomposition + halo audit & P4 closure, P3 strict $D_\Omega$ \\
+P4-C & \texttt{egr-h3c-witnesses} & \texttt{b64349c1cf91} & indirect-witness chain & P4 closure \\
+P4-D & \texttt{egr-atiyah-singer-chirality} & \texttt{73c4bc1ad24e} & native/trivial Wilson-Dirac index audit + non-trivial Kogut--Susskind staggered flux closure; physical chirality lift conditional & P4-C chirality witness \\
+P5 & \texttt{qft-einstein-bridge} & \texttt{45b61d07dc1c} & technical consistency note (not a UV completion; cf.\ P6) & P1, P2, P3, P4 versions hashed below \\
+P6 & \texttt{relational-uv-closure} & \texttt{(see P6 repo)} & UV-closure construction (this is the UV-completion companion) & P1, P2, P3, P4, P4-A, P4-B, P4-D \\
+\bottomrule
+\end{tabular}
