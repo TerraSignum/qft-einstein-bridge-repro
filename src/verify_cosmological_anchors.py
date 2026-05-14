@@ -135,6 +135,17 @@ def main():
         }
         # Note: this is the multiplier-only check; tree-input + sign convention
         # are recorded in JSON `note` fields where applicable.
+        # Skip free-text loop_class values: any formula containing a space-
+        # followed-by-open-paren reads as a function call to Python's eval
+        # and emits a SyntaxWarning before failing. These are tree-level or
+        # structural-only anchors with no multiplicative loop factor.
+        if " (" in formula or "structural" in formula:
+            formula_check.append({
+                "id": a["id"], "name": a["name"], "formula": formula,
+                "skipped_reason": "non-multiplicative annotation "
+                                  "(tree-level or structural-only)",
+            })
+            continue
         try:
             multiplier = eval(formula, {"__builtins__": {}}, ns)
             formula_check.append({
@@ -142,7 +153,7 @@ def main():
                 "multiplier_eval": float(multiplier),
                 "predicted_listed": float(predicted_listed),
             })
-        except Exception as e:
+        except (NameError, SyntaxError, TypeError, ZeroDivisionError) as e:
             formula_check.append({
                 "id": a["id"], "name": a["name"], "formula": formula,
                 "eval_error": str(e),
