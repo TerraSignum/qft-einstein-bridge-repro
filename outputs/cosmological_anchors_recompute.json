@@ -23,13 +23,13 @@
       "id": "GR03",
       "name": "Einstein_gap_two_thirds",
       "formula": "1 (tree)",
-      "eval_error": "name 'tree' is not defined"
+      "skipped_reason": "non-multiplicative annotation (tree-level or structural-only)"
     },
     {
       "id": "GR04",
       "name": "BH_entropy_quarter",
       "formula": "1 (tree, with R-ascent to algebraic identity)",
-      "eval_error": "invalid syntax (<string>, line 1)"
+      "skipped_reason": "non-multiplicative annotation (tree-level or structural-only)"
     },
     {
       "id": "GR05",
@@ -63,19 +63,19 @@
       "id": "GR11",
       "name": "tau_reion",
       "formula": "1 (tree)",
-      "eval_error": "name 'tree' is not defined"
+      "skipped_reason": "non-multiplicative annotation (tree-level or structural-only)"
     },
     {
       "id": "GR12",
       "name": "delta_Y_BBN",
       "formula": "1 (tree)",
-      "eval_error": "name 'tree' is not defined"
+      "skipped_reason": "non-multiplicative annotation (tree-level or structural-only)"
     },
     {
       "id": "GR15",
       "name": "N_eff",
       "formula": "structural (3 active neutrino species + thermal)",
-      "eval_error": "invalid syntax. Perhaps you forgot a comma? (<string>, line 1)"
+      "skipped_reason": "non-multiplicative annotation (tree-level or structural-only)"
     },
     {
       "id": "GR17",
