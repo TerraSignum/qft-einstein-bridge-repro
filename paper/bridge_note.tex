@@ -22,8 +22,8 @@
 
 % Clickable GitHub links for src/*.py citations (auto-generated)
 \newcommand{\ghrepo}[1]{https://github.com/TerraSignum/#1}
-% \nolinkurl gives a monospace, line-breakable rendering of the
-% short script-stem display text without competing with \href.
+% \nolinkurl gives a monospace, line-breakable rendering (handles
+% underscores) without creating an inner link competing with \href.
 \newcommand{\pyscript}[3]{%
   \href{\ghrepo{#1}/blob/main/#2}{\nolinkurl{#3}}}
 \newcommand{\repoOwn}{qft-einstein-bridge-repro}
